@@ -12,7 +12,7 @@ public class LoginPage_TestCase {
 	void testValidCredential() 
 	{
 		WebDriver driver = new ChromeDriver();
-		driver.get("file:///C:/Users/ADMIN/Documents/Selenium%20Softwares/Offline%20Website/pages/examples/add_user.html");
+		driver.get("file:///C:/Users/ADMIN/Documents/Selenium%20Softwares/Offline%20Website/index.html");
 		driver.findElement(By.id("email")).sendKeys("kiran@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("123456");
 		driver.findElement(By.xpath("//*[@id=\"form\"]/div[3]/div/button")).click();
@@ -25,11 +25,12 @@ public class LoginPage_TestCase {
 //		driver.get("file:///C:/Users/ADMIN/Documents/Selenium%20Softwares/Offline%20Website/pages/examples/add_user.html");
 //		
 //	}
+	
 	@Test
 	void testInValidCredential() 
 	{
 		WebDriver driver = new ChromeDriver();
-		driver.get("file:///C:/Users/ADMIN/Documents/Selenium%20Softwares/Offline%20Website/pages/examples/add_user.html");
+		driver.get("file:///C:/Users/ADMIN/Documents/Selenium%20Softwares/Offline%20Website/index.html");
 		driver.findElement(By.id("email")).sendKeys("kiran@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("126");
 		driver.findElement(By.xpath("//*[@id=\"form\"]/div[3]/div/button")).click();
