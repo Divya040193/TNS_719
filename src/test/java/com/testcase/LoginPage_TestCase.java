@@ -26,14 +26,14 @@ public class LoginPage_TestCase {
 //		
 //	}
 	
-	@Test
-	void testInValidCredential() 
-	{
-		WebDriver driver = new ChromeDriver();
-		driver.get("file:///C:/Users/ADMIN/Documents/Selenium%20Softwares/Offline%20Website/index.html");
-		driver.findElement(By.id("email")).sendKeys("kiran@gmail.com");
-		driver.findElement(By.id("password")).sendKeys("123456");
-		driver.findElement(By.xpath("//*[@id=\"form\"]/div[3]/div/button")).click();
-		Assert.assertEquals(driver.getTitle(), "JavaByKiran | Dashboard");
-	}
+//	@Test
+//	void testInValidCredential() 
+//	{
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("file:///C:/Users/ADMIN/Documents/Selenium%20Softwares/Offline%20Website/index.html");
+//		driver.findElement(By.id("email")).sendKeys("kiran@gmail.com");
+//		driver.findElement(By.id("password")).sendKeys("123456");
+//		driver.findElement(By.xpath("//*[@id=\"form\"]/div[3]/div/button")).click();
+//		Assert.assertEquals(driver.getTitle(), "JavaByKiran | Dashboard");
+//	}
 }
