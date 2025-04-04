@@ -18,6 +18,12 @@ public class LoginPage_TestCase {
 		driver.findElement(By.xpath("//*[@id=\"form\"]/div[3]/div/button")).click();
 		String title=driver.getTitle();
 		//System.out.println(title);
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Assert.assertEquals(title,"JavaByKiran | Dashboard");
 	}
 	
