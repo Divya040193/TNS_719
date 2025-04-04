@@ -17,6 +17,6 @@ public class RegisterPageTestCase {
 
 	@Test
 	void testinvalid() {
-		Assert.assertEquals(4, 4);
+		Assert.assertEquals(3, 4);
 	}
 }
