@@ -21,7 +21,8 @@ public class LoginPage_TestCase {
 		driver.findElement(By.id("password")).sendKeys("123456");
 		driver.findElement(By.xpath("//*[@id=\"form\"]/div[3]/div/button")).click();
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.titleContains("JavaByKiran | Dashboard"));
 		String title=driver.getTitle();
 		//System.out.println(title);
 		
