@@ -16,7 +16,7 @@ public class LoginPage_TestCase {
 		driver.findElement(By.id("email")).sendKeys("kiran@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("123456");
 		driver.findElement(By.xpath("//*[@id=\"form\"]/div[3]/div/button")).click();
-		Assert.assertEquals(driver.getTitle(), "JavaByKiran | Dashboard");
+		Assert.assertEquals(driver.getTitle(),"JavaByKiran | Dashboard");
 	}
 	
 //	@Test

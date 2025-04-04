@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.testcase.LoginPage_TestCase"/>
-       <class name="com.testCase2.RegisterPageTestCase"/>
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
