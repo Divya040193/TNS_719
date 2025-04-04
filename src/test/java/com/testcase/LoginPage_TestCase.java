@@ -1,8 +1,12 @@
 package com.testcase;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -16,14 +20,11 @@ public class LoginPage_TestCase {
 		driver.findElement(By.id("email")).sendKeys("kiran@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("123456");
 		driver.findElement(By.xpath("//*[@id=\"form\"]/div[3]/div/button")).click();
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		String title=driver.getTitle();
 		//System.out.println(title);
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 		Assert.assertEquals(title,"JavaByKiran | Dashboard");
 	}
 	
